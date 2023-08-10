@@ -1,4 +1,4 @@
-import { Link, NavLink, Outlet } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import navLogo from "../../../assets/logo/logo.png";
 import { FaAngleRight, FaPlus } from "react-icons/fa";
 
@@ -92,7 +92,7 @@ const Navbar = () => {
           </div>
         </div>
         {/* Page content here */}
-        <Outlet />
+        
       </div>
       <div className="drawer-side">
         <label htmlFor="my-drawer-3" className="drawer-overlay"></label>
