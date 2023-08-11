@@ -21,7 +21,7 @@ const Footer = () => {
                     </div>
                 </div>
             </footer>
-            <footer className="px-10 py-4 border-t bg-base-200 text-white border-base-300">
+            <footer className="px-10 py-4 border-t bg-gray-500 text-white border-base-300">
                 <div className="footer max-w-7xl mx-auto">
                     <div className="items-center grid-flow-col">
                         <p>Copyright © 2023 - All right reserved by InsightQuest</p>
