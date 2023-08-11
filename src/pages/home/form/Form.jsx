@@ -67,8 +67,8 @@ const Form = () => {
 
     </div>
     <div className='flex gap-2 justify-center mt-4 py-4 bg-gray-100'>
-        <button className='btn btn-sm text-white hover:bg-[#1abc9c] hover:text-white border-0 rounded-none bg-gray-200 px-6'> <MdOutlineKeyboardArrowLeft/> backward</button>
-        <button className='btn btn-sm text-white hover:bg-[#1abc9c] hover:text-white border-0 rounded-none bg-gray-200 px-6'>Forward <MdOutlineKeyboardArrowRight/></button>
+        <button className='btn btn-sm text-white hover:bg-[#1abc9c] hover:text-white border-0 rounded-none bg-gray-400 px-6'> <MdOutlineKeyboardArrowLeft/> backward</button>
+        <button className='btn btn-sm text-white hover:bg-[#1abc9c] hover:text-white border-0 rounded-none bg-gray-400 px-6'>Forward <MdOutlineKeyboardArrowRight/></button>
     </div>
 </form>
 
