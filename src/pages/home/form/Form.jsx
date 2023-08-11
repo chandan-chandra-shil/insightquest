@@ -4,7 +4,7 @@ import {MdOutlineKeyboardArrowLeft, MdOutlineKeyboardArrowRight} from 'react-ico
 
 const Form = () => {
     return (
-        <div className='formBg p-6'>
+        <div className='formBg p-6 my-12'>
             <div className="lg:w-9/12 mx-auto my-12 h-4/6">
 
 <div className="text-center text-white">
