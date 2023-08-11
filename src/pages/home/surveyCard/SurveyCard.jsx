@@ -6,7 +6,7 @@ const SurveyCard = () => {
         <div>
             <div className="text-center text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 to-blue-500">
                 <h1 className="text-3xl lg:text-5xl font-bold uppercase">Our Website Service</h1>
-                <p className="font-light text-lg leading-tight lg:text-2xl tracking-wide">Let's see some most provided services in our website</p>
+                <p className="font-light text-xl leading-tight lg:text-2xl tracking-wide w-3/4 mx-auto">Let's see some most provided services in our website</p>
             </div>
             <div className="grid grid-cols-1 lg:grid-cols-4 w-10/12 gap-6 mx-auto text-center my-12">
                 <div className="flex flex-col justify-center  items-center border border-blue-500 hover:bg-gradient-to-r from-cyan-100 to-blue-100 rounded-md p-8">
