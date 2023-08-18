@@ -83,7 +83,7 @@ const Navbar = () => {
                 Contact us
               </NavLink>
               <button className="btn btn-sm text-white bg-gradient-to-r from-cyan-500 to-blue-500 h-10">
-                <Link>
+                <Link to="/createnewsurvey">
                   <FaPlus className="inline-flex items-center" /> Create new
                   survey
                 </Link>

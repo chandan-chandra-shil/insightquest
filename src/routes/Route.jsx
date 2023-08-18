@@ -5,6 +5,7 @@ import ErrorPage from "../pages/errorPage/ErrorPage";
 import SurveyCard from "../pages/home/surveyCard/SurveyCard";
 import ContactUs from "../pages/home/contactUs/ContactUs";
 import AboutUs from "../pages/home/aboutUs/AboutUs";
+import CreateNewSurvey from "../pages/home/createNewSurvey/CreateNewSurvey";
 
 const router = createBrowserRouter([
   {
@@ -27,6 +28,10 @@ const router = createBrowserRouter([
       {
         path: "contact",
         element: <ContactUs></ContactUs>
+      },
+      {
+        path: "createnewsurvey",
+        element: <CreateNewSurvey></CreateNewSurvey>
       }
     ]
   },
