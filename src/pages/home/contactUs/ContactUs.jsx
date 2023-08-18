@@ -1,4 +1,3 @@
-import React from 'react';
 import emailjs from '@emailjs/browser';
 import image from '../../../assets/8690678_3969587-removebg-preview.png'
 const ContactUs = () => {
