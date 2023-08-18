@@ -31,7 +31,7 @@ const Login = () => {
                     <div className='w-full p-5'>
                         <div className='gap-2 items-center text-center'>
                             <div>
-                                <h2 className='text-3xl font-semibold text-gray-800'>Sign in with </h2>
+                                <h2 className='text-3xl font-semibold text-gray-800'>Sign with </h2>
                             </div>
                             <div className='flex justify-center my-2 gap-1'>
                                 <button className='bg-gradient-to-r from-blue-500 to-cyan-500 text-white rounded-full shadow-xl h-8 w-8 '><FaFacebookF
