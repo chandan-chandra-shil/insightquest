@@ -1,8 +1,20 @@
 import { Link, NavLink } from "react-router-dom";
 import navLogo from "../../../assets/logo/logo.png";
 import { FaAngleRight, FaPlus } from "react-icons/fa";
+import { useContext } from "react";
+import { AuthContext } from "../../../Provider/AuthProvider";
 
 const Navbar = () => {
+  const { auth, user, logOut } = useContext(AuthContext)
+  console.log(auth);
+
+  const handleLogOut = () => {
+    console.log('clicked');
+    logOut()
+      .then()
+      .catch(error => console.log(error));
+  }
+
   return (
     <div className="drawer">
       <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
@@ -72,7 +84,7 @@ const Navbar = () => {
               </NavLink>
               <FaAngleRight />
               <NavLink
-                to="/contact"
+                to="contactUs"
                 style={({ isActive, isPending }) => {
                   return {
                     fontWeight: isActive ? "bold" : "",
@@ -83,16 +95,27 @@ const Navbar = () => {
                 Contact us
               </NavLink>
               <button className="btn btn-sm text-white bg-gradient-to-r from-cyan-500 to-blue-500 h-10">
-                <Link>
+                <Link to='login'>
                   <FaPlus className="inline-flex items-center" /> Create new
                   survey
                 </Link>
               </button>
+
+              {auth.currentUser && <Link > <button onClick={handleLogOut} className="bg-transparent text-black hover:bg-gray-100 hover:text-gray-800 px-3 py-2 border border-white hover:border-transparent rounded">
+                Log Out
+              </button></Link>}
+
+              {!auth.currentUser &&
+                <Link to='/login'> <button className="bg-transparent text-black hover:bg-gray-100 hover:text-gray-800 px-3 py-2 border border-white hover:border-transparent rounded">
+                  Login
+                </button></Link>}
+
             </ul>
+
           </div>
         </div>
         {/* Page content here */}
-        
+
       </div>
       <div className="drawer-side">
         <label htmlFor="my-drawer-3" className="drawer-overlay"></label>
@@ -111,11 +134,30 @@ const Navbar = () => {
             <Link>Contact us</Link>
           </li>
           <button className="btn btn-sm text-white rounded-none bg-gradient-to-r from-cyan-500 to-blue-500 h-10">
-            <Link>
+            <Link to='login'>
               <FaPlus className=" inline-flex items-center" /> Create new survey
             </Link>
           </button>
         </ul>
+        {/* <div className="hidden md:flex items-center space-x-4">
+
+          {
+            user &&
+            <div className="online">
+              <div>
+                <button className="btn btn-xs">{user.displayName}</button>
+              </div>
+            </div>
+          }
+          {user ? <button onClick={handleLogOut} className="bg-transparent text-white hover:bg-gray-100 hover:text-gray-800 px-3 py-2 border border-white hover:border-transparent rounded">
+            Logout
+          </button> :
+            <Link to='/login'> <button className=" text-black hover:bg-gray-100 hover:text-gray-800 px-3 py-2 border border-white hover:border-transparent rounded">
+              Login
+            </button></Link>}
+
+
+        </div> */}
       </div>
     </div>
   );
