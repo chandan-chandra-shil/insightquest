@@ -1,5 +1,4 @@
 import Form from "../Form/Form";
-import AboutUs from "../aboutUs/AboutUs";
 import Banner from "../banner/Banner";
 import ContactUs from "../contactUs/ContactUs";
 import SurveyCard from "../surveyCard/SurveyCard";
