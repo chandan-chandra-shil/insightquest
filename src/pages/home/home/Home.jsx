@@ -1,6 +1,6 @@
+import Form from "../Form/Form";
 import Banner from "../banner/Banner";
 import ContactUs from "../contactUs/ContactUs";
-import Form from "../form/Form";
 import SurveyCard from "../surveyCard/SurveyCard";
 
 
@@ -10,6 +10,7 @@ const Home = () => {
       <Banner></Banner>
       <Form></Form>
       <SurveyCard></SurveyCard>
+      <AboutUs></AboutUs>
       <ContactUs></ContactUs>
     </div>
   );
